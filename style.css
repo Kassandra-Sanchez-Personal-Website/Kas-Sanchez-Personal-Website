@@ -1,0 +1,145 @@
+/* CSS Styling home html file */
+h1, h2 {
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
+}
+  
+h1 {
+    font-size: 2em;
+}
+  
+h2 {
+    font-size: 1.5em;
+}
+.girl {
+    width: 200px;
+    clip-path: circle();
+    float: right;
+}
+.quote {
+    font-family: 'Satisfy', c;
+    font-weight: 100;
+    color: rgb(226, 216, 196);
+    text-shadow: 1px 1px 2px black;
+    font-size: 3em;
+    text-align: center;
+    margin-top: 2em;
+}
+/* CSS Styling for all three html files */
+* {
+    box-sizing: border-box;
+}
+  
+body {
+    background: rgb(94, 121, 110);
+    max-width: 960px;
+    color: rgb(38, 60, 38);
+    margin: 0 auto;
+}
+  
+header {
+    font-size: 2rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    padding: .5em 1em;
+    box-shadow: 0 2px 4px -2px black;
+}
+  
+main {
+    min-height: 100vh;
+    padding: 64px 24px 96px;
+   
+    color: #eee;
+    font-family: 'Open Sans', sans-serif;
+}
+  
+header::after {
+    display: block;
+    clear: both;
+    content: '';
+}
+  
+.name {
+    float: left;
+}
+.links {
+    float: right;
+}
+.links a {
+    text-decoration: none;
+    color: inherit;
+    margin-left: .25em;
+}
+  
+.links a:first-of-type {
+    margin-left: 0;
+}
+  
+.links a.active {
+    border-bottom: 2px solid rgb(38, 60, 38);
+}
+  
+footer {
+    box-sizing: border-box;
+    position: fixed;
+    height: 64px;
+    padding: 16px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: left;
+    box-shadow: 0 -2px 4px -2px black;
+}
+  
+footer .media-link {
+    height: 30px;
+}
+  
+footer a {
+    margin-right: 64px;
+    text-decoration: none;
+}
+  
+header, footer {
+    background: rgb(221, 230, 224);
+}
+
+/* CSS Styling for about.html file */
+section > img {
+    height: 180px;
+    width: 150px;
+}
+  
+section:nth-child(2) > img {
+    float: left;
+    margin: 0 24px 24px 0;
+}
+  
+  
+section:nth-child(3) > img {
+    float: right;
+    margin: 0 0 24px 24px;
+}
+section {
+    border-top: 1px solid #bbb;
+}
+/* CSS Styling for portfolio.html file */
+.picassoImg {
+    width: 200px;
+    height: 150px;
+    float: left;
+}
+.groceryListImg {
+    width: 200px;
+    height: 150px;
+    float: right;
+}
+.picassoLink {
+    color: white;
+    font-size: 1.5em;
+}
+.groceryLink {
+    color: white;
+    font-size: 1.5em;
+}
