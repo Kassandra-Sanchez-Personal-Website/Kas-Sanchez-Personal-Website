@@ -5,16 +5,36 @@ h1, h2 {
 }
   
 h1 {
-    font-size: 2em;
+    font-size: 3em;
+    position: relative;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+    z-index: 40;
 }
   
 h2 {
     font-size: 1.5em;
+    text-shadow: 1px 1px 2px black;
+    text-align: left;
+    position: relative;
+    z-index: 40;
 }
 .girl {
     width: 200px;
     clip-path: circle();
+    opacity: 80%;
     float: right;
+    position: relative;
+    z-index: 40;
+}
+.leaves {
+    mix-blend-mode: multiply;
+    justify-content: center;
+    width: 950px;
+    height: 600px;
+    opacity: 40%;
+    position: absolute;
+    z-index: 20;
 }
 .quote {
     font-family: 'Satisfy', c;
@@ -22,8 +42,15 @@ h2 {
     color: rgb(226, 216, 196);
     text-shadow: 1px 1px 2px black;
     font-size: 3em;
-    text-align: center;
+    text-align: left;
     margin-top: 2em;
+    position: relative;
+    z-index: 40;
+}
+p {
+    text-shadow: 1px 1px 2px black;
+    position: relative;
+    z-index: 40;
 }
 /* CSS Styling for all three html files */
 * {
@@ -35,6 +62,8 @@ body {
     max-width: 960px;
     color: rgb(38, 60, 38);
     margin: 0 auto;
+    position: relative;
+    z-index: 10;
 }
   
 header {
@@ -103,6 +132,8 @@ footer a {
   
 header, footer {
     background: rgb(221, 230, 224);
+    position: fixed;
+    z-index: 100;
 }
 
 /* CSS Styling for about.html file */
