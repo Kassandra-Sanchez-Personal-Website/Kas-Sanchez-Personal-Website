@@ -1,3 +1,5 @@
+@media (min-width: 100px) {
+
 /* CSS Styling home html file */
 h1, h2 {
     font-weight: 300;
@@ -5,7 +7,7 @@ h1, h2 {
 }
   
 h1 {
-    font-size: 3em;
+    font-size: 2.0em;
     position: relative;
     text-shadow: 1px 1px 2px black;
     text-align: center;
@@ -21,7 +23,9 @@ h2 {
 }
 .girl {
     width: 200px;
-    clip-path: circle();
+    /*clip-path: circle();*/
+    border-radius: 120% / 50%;
+    border: 2px solid white;
     opacity: 80%;
     float: right;
     position: relative;
@@ -41,7 +45,7 @@ h2 {
     font-weight: 100;
     color: rgb(226, 216, 196);
     text-shadow: 1px 1px 2px black;
-    font-size: 3em;
+    font-size: 2.2em;
     text-align: left;
     margin-top: 2em;
     position: relative;
@@ -74,7 +78,6 @@ header {
     padding: .5em 1em;
     box-shadow: 0 2px 4px -2px black;
 }
-  
 main {
     min-height: 100vh;
     padding: 64px 24px 96px;
@@ -82,15 +85,14 @@ main {
     color: #eee;
     font-family: 'Open Sans', sans-serif;
 }
-  
 header::after {
     display: block;
     clear: both;
     content: '';
 }
-  
 .name {
     float: left;
+    font-family: cursive;
 }
 .links {
     float: right;
@@ -100,15 +102,12 @@ header::after {
     color: inherit;
     margin-left: .25em;
 }
-  
 .links a:first-of-type {
     margin-left: 0;
 }
-  
 .links a.active {
     border-bottom: 2px solid rgb(38, 60, 38);
 }
-  
 footer {
     box-sizing: border-box;
     position: fixed;
@@ -120,57 +119,83 @@ footer {
     text-align: left;
     box-shadow: 0 -2px 4px -2px black;
 }
-  
 footer .media-link {
     height: 30px;
 }
-  
 footer a {
     margin-right: 64px;
     text-decoration: none;
 }
-  
 header, footer {
-    background: rgb(221, 230, 224);
+    background:  rgb(211, 224, 215);
     position: fixed;
     z-index: 100;
 }
 
 /* CSS Styling for about.html file */
 section > img {
-    height: 180px;
-    width: 150px;
-}
-  
-section:nth-child(2) > img {
-    float: left;
-    margin: 0 24px 24px 0;
-}
-  
-  
-section:nth-child(3) > img {
+    height: 200px;
+    width: 180px;
     float: right;
-    margin: 0 0 24px 24px;
+    opacity: 75%;
+}
+.hike {
+    position: relative;
+    z-index: 40;
+    
+}
+.art {  
+    position: relative;
+    z-index: 40;
 }
 section {
-    border-top: 1px solid #bbb;
+    border-top: 2px solid #bbb;
 }
+
 /* CSS Styling for portfolio.html file */
+.leaves2 {
+    mix-blend-mode: multiply;
+    justify-content: center;
+    width: 950px;
+    height: 600px;
+    opacity: 40%;
+    position: absolute;
+    z-index: 20;
+}
 .picassoImg {
-    width: 200px;
-    height: 150px;
-    float: left;
+    width: 250px;
+    height: 190px;
+    float: right;
+    position: relative;
+    z-index: 40;
 }
 .groceryListImg {
-    width: 200px;
-    height: 150px;
+    width: 250px;
+    height: 190px;
     float: right;
+    position: relative;
+    z-index: 40;
 }
 .picassoLink {
     color: white;
     font-size: 1.5em;
+    position: relative;
+    z-index: 40;
 }
 .groceryLink {
     color: white;
     font-size: 1.5em;
+    position: relative;
+    z-index: 40;
 }
+/* CSS Styling for contact.html */
+.submission {
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+    z-index: 40; 
+    color: solid white;  
+}
+
+}
+
